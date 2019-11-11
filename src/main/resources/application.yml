@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    username: sa
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.HSQLDialect
+        event:
+          merge:
+            entity_copy_observer: allow
+    hibernate:
+      ddl-auto: update

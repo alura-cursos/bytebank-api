@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:file:database/main/db
+server:
+  port: ${port:8080}
+user:
+  password: ${password:1000}
