@@ -6,8 +6,7 @@ Web API em Spring Boot para consumo do App em Flutter do Bytebank
 
 A Web API oferece as seguintes funcionalidades:
 
-- Listagem e cadastro de transações;
-- Listagem, cadastro e atualização de features.
+- Listagem e cadastro de transações.
 
 ## Como executar
 
@@ -117,69 +116,4 @@ Para acessar as funcionalidades foram disponibilizados os seguintes end-points:
         },
         "dateTime": "2019-11-06 12:57:23"
   }
-  ```
-
-
-- `/features`:
-
-  - **GET**: Listagem de todas as features cadastradas.
-
-  ```
-  // response example
-  [
-      {
-          "id" : 1
-      },
-      {
-          "id" : 2
-      }
-  ]
-  ```
-
-  - **POST**: Inserção:
-    - É necessário enviar o `id` via corpo da requisição. Essa mesma abordagem permite alterar a feature.
-
-  ```
-  // resquest body example
-  {
-      "id": 3
-  }
-
-  // response example
-  {
-      "id": 3
-  }  
-  ```
-  
-  Por padrão, todas as features adicionadas estão indisponíveis, para torná-las disponíveis, envie o argumento `available` com valor `true` no corpo da requisição durante o cadastro ou atualização:
-  
-    ```
-    // request body example
-    {
-        "id": 4,
-        "available": true
-    }
-  
-    // response example
-    {
-        "id": 4
-    }  
-    ```
-
-- `/features/available`:
-  - **GET**: listagem de todas as features cadastradas que estão com status disponível.
-
-  ```
-  // response example
-  [
-      {
-          "id": 1
-      },
-      {
-          "id": 2
-      },
-      {
-          "id": 4
-      }
-  ]
   ```
