@@ -8,6 +8,10 @@ A Web API oferece as seguintes funcionalidades:
 
 - Listagem e cadastro de transações.
 
+## Como baixar
+
+Você pode baixar o arquivo jar aqui: https://github.com/alura-cursos/bytebank-api/archive/runnable.zip
+
 ## Como executar
 
 Após clonar o projeto, dentro do diretório raiz, execute a task `bootRun` do Gradle. A primeira execução vai realizar o download de todas dependências necessárias.
