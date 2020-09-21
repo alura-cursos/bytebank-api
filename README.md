@@ -42,9 +42,9 @@ user:
 
 Na amostra acima, durante a execução a aplicação vai operar na porta `8081` e a senha para as transações será `2000`.
 
-## Modificando propridades durante a execução
+## Modificando propriedades durante a execução
 
-Também é possível modificar as propridades via command line durante a execução.
+Também é possível modificar as propriedades via command line durante a execução.
 
 ### Via task `bootRun` do Gradle
 
